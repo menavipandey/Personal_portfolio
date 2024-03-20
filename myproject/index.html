@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>RESPONSIVE PERSONAL PORTFOLIO WEBSITE </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--body-->
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello,I'm</h3>
+                <h1>Navi Pandey</h1>
+                <h3>And I'm a <span class="multiple-text">CSE Student at JIIT</span></h3>
+                <div class="social-media">
+                    <a href="https://github.com/menavipandey"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:navipandey67@gmail.com"><i class='bx bxs-envelope'></i></a>
+                    <a href="https://www.linkedin.com/in/navi-pandey-838626245/"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1KEqOIidGv_tgVQjzG-YBTtjbcs1LoCHc/view?usp=drive_link"  class="btn">Download CV</a>
+
+            </div>
+            <div class="home-img">
+                <img src="https://user-images.githubusercontent.com/74038190/221352975-94759904-aa4c-4032-a8ab-b546efb9c478.gif" alt="">
+            </div>
+        </section>
+        
+        <section class="services"id="services">
+            <h2 class="heading"><span>Skills</span></h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Frontend Development</h3> 
+                    <p>CSS</p>
+                    <p>HTML</p>
+                    <p>React.js</p>
+                    <p>Bootstrap</p>
+                    
+                </div>
+        
+                <div class="services-box">
+                    <i class="bi bi-hdd-stack"></i>
+                    <h3>Backend Development</h3>
+                    <p>MySQL</p>
+                    <p>SQLite</p>
+                    <p>Node.js</p>
+                    <p>Express.js</p>
+                    <p>MongoDB</p>
+                </div>
+            
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Programming Languages</h3>
+                   <p>C</p>
+                   <p>CPP</p>
+                   <p>Python</p>
+                   <p>Javascript</p>  
+                </div>
+            </div>
+        </section>
+        <section class="portfolio"id="portfolio">
+            <h2 class="heading">Latest<span> Projects</span></h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="./image/project1.png"alt="Project1">
+                    <div class="portfolio-layer">
+                        <h4>Agrimart</h4>
+                        <p>E-commerce Platform to directly connect farmers with buyers using MERN Stack.</p>
+                        <a href="https://github.com/menavipandey/Agri-Mart.git"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="./image/Screenshot 2024-03-20 094512.png"alt="">
+                    <div class="portfolio-layer">
+                        <h4>Laser Application</h4>
+                        <p>This is a static website to showcase laser applications.</p>
+                        <a href="https://github.com/menavipandey/-Laser_Application_Website.git"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="./image/notepad.png"alt="">
+                    <div class="portfolio-layer">
+                        <h4>Notepad Application</h4>
+                        <p> This notepad application is designed for users to easily create, manage, and organize text-based notes online. </p>
+                        <a href="https://github.com/menavipandey/Notepad_Application.git"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+        <section class="contact"id="contact">
+            <h2 class="heading">Contact<span>ME!</span></h2>
+
+            <form action="#" name="submit-to-google-sheet">
+                <div class="input-box">
+                    <input type="text" name="Name" placeholder="Full Name">
+                    <input type="email" name="Email Address" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" name="Mobile Number"placeholder="Mobile Number">
+                    <input type="text"name="Email Subject" placeholder="Email Subject">
+                </div>
+                <textarea name="Your Message" id="" cols="30" rows="10"placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message"class="btn">
+            </form>
+            <span id="msg"></span>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Navi | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="script.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+        
+    </body>
+</html>
